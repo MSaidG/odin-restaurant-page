@@ -11,8 +11,8 @@ console.log("Hello, Hi, welcome!");
 const homeBtn = document.createElement("button");
 const menuBtn = document.createElement("button");
 const contactBtn = document.createElement("button");
-const context = document.createElement("div");
-const layout = document.createElement("div");
+
+const layout = document.createElement("header");
 
 const body = document.querySelector("body");
 
@@ -21,16 +21,19 @@ homeBtn.classList.add("active");
 menuBtn.textContent = "MENU";
 contactBtn.textContent = "CONTACT";
 
+
 layout.appendChild(homeBtn);
 layout.appendChild(menuBtn);
 layout.appendChild(contactBtn);
 
+const footer = document.createElement("footer");
 body.appendChild(layout);
+body.appendChild(footer);
+
 
 
 
 const btns = document.querySelectorAll("button");
-
 layoutHome();
 
 homeBtn.addEventListener("click", (e) => {
