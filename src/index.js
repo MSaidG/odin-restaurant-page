@@ -17,7 +17,9 @@ const layout = document.createElement("header");
 const body = document.querySelector("body");
 
 homeBtn.textContent = "HOME";
-homeBtn.classList.add("active");
+//homeBtn.classList.add("active");
+//menuBtn.classList.add("active");
+contactBtn.classList.add("active");
 menuBtn.textContent = "MENU";
 contactBtn.textContent = "CONTACT";
 
@@ -26,15 +28,23 @@ layout.appendChild(homeBtn);
 layout.appendChild(menuBtn);
 layout.appendChild(contactBtn);
 
+const footerText1 = document.createElement("p");
+const footerText2 = document.createElement("p");
 const footer = document.createElement("footer");
+
+footerText1.textContent = "Created By MSaidG";
+footerText2.textContent = "Cull&Pistol © 2023 | All Rights Reserved";
+
 body.appendChild(layout);
 body.appendChild(footer);
+footer.appendChild(footerText1);
+footer.appendChild(footerText2);
 
 
 
 
 const btns = document.querySelectorAll("button");
-layoutHome();
+layoutContact();
 
 homeBtn.addEventListener("click", (e) => {
     if (e.target.classList.value == "active") return;
