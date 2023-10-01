@@ -17,9 +17,7 @@ const layout = document.createElement("header");
 const body = document.querySelector("body");
 
 homeBtn.textContent = "HOME";
-//homeBtn.classList.add("active");
-//menuBtn.classList.add("active");
-contactBtn.classList.add("active");
+homeBtn.classList.add("active");
 menuBtn.textContent = "MENU";
 contactBtn.textContent = "CONTACT";
 
@@ -44,7 +42,7 @@ footer.appendChild(footerText2);
 
 
 const btns = document.querySelectorAll("button");
-layoutContact();
+layoutHome();
 
 homeBtn.addEventListener("click", (e) => {
     if (e.target.classList.value == "active") return;
